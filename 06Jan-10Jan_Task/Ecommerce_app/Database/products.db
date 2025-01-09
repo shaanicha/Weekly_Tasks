@@ -1,0 +1,19 @@
+)-tableordersordersCREATE TABLE orders
+            (id INTEGER PRIMARY KEY AUTOINCREMENT,
+             user_id INTEGER NOT NULL,
+             product_id INTEGER NOT NULL,
+             quantity INTEGER NOT NULL,
+             total_price REAL NOT NULL,
+             status TEXT DEFAULT "pending",
+             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+             FOREIGN KEY (product_id) REFERENCES products (id))P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)!tableproductsproductsCREATE T
+ABLE products
+            (id INTEGER PRIMARY KEY AUTOINCREMENT,
+             name TEXT NOT NULL,
+             price REAL NOT NULL,
+             description TEXT,
+             image_url TEXT,
+      _ creT!373Headphones@hzHWireless headphonesimages/headphones.jpg2025-01-08 11:00:44M!/-3Smartphone@RLatest smartphoneimages/phone.jpg2025-01-08 11:00:44P;/3Laptop@?
+h-performance laptopimages/laptop.jpg2025-01-08 11:00:44
+N{N+
+    roducts@Rpending2025-01-08 11:02:20+       @Rpending2025-01-08 11:02:20*                @?Rpending2025-01-08 11:02:15*                @?Rpending2025-01-08 
