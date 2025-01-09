@@ -63,9 +63,11 @@ def init_db():
         c.execute("SELECT COUNT(*) FROM products")
         if c.fetchone()[0] == 0:
             sample_products = [
-                ("Laptop", 999.99, "High-performance laptop", "images/laptop.jpg"),
-                ("Smartphone", 699.99, "Latest smartphone", "images/phone.jpg"),
-                ("Headphones", 199.99, "Wireless headphones", "images/headphones.jpg")
+                ("Gaming Laptop", 1599.99, "Powerful gaming laptop with RTX 3070", "images/gaming-laptop.jpg"),
+                ("Smartwatch", 249.99, "Smartwatch with fitness tracking", "images/smartwatch.jpg"),
+                ("Bluetooth Speaker", 129.99, "Portable wireless Bluetooth speaker", "images/speaker.jpg"),
+                ("4K TV", 799.99, "Smart 4K TV with HDR support", "images/4k-tv.jpg"),
+                ("Wireless Mouse", 29.99, "Ergonomic wireless mouse with long battery life", "images/mouse.jpg")
             ]
             c.executemany("""
                 INSERT INTO products (name, price, description, image_url) 
